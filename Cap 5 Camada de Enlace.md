@@ -44,9 +44,9 @@
 - Uma técnica de detecção de erros muito usadas nas redes de computadores de hoje é baseada em códigos de verificação de redundância cíclica (CRC).
 - Códigos de CRC também são conhecidos como códigos polinomiais.
 
-![[Pasted image 20250418211716.png]]
+![[images/Pasted image 20250418211716.png]]
 
-![[Pasted image 20250418211909.png]]
+![[images/Pasted image 20250418211909.png]]
 
 ## Enlaces e protocolos de acesso multiplo
 
@@ -104,7 +104,7 @@ NOTA: pelo oque eu entedi; o canal é dividido em slots de tempo, igual o TDM, e
 
 Essas regras são incorporadas na família de protocolos de **acesso multiplo com detrcção de portadora** (CSMA) e CSMA **com detecção de colisão** (CSMA/CD) 
 
-![[Pasted image 20250501213344.png]]
+![[images/Pasted image 20250501213344.png]]
 
 - **Colisões ainda podem acontecer** pois quando um nó lança o pacote, um outro nó mais longe fisicamente pode demorar pra ouvir o sinal (por uma questão fisica até) e mandar o pacote dele, isso pode causar colisão, é oque acontece no grafico 
 - Essa colisão desperdiça todo o pacote
@@ -117,7 +117,7 @@ Essas regras são incorporadas na família de protocolos de **acesso multiplo co
 	- Difícil em LANs sem fio: o receptor é desligado durante a transmissão, alem disso nem todos os clientes se enchergam na rede, o ponto de acesso enxerga todos, mas os clientes N
 
 
-![[Pasted image 20250501214243.png]]
+![[images/Pasted image 20250501214243.png]]
 
 Assim fica o grafico no caso de CSMA/CD, percebesse que mesmo detectando a colisão, o primeiro nó continua propagando por mais um tempinho pra poder chegar pros outros clientes da rede
 
@@ -148,7 +148,7 @@ NOTA: sla
 - **Data-over-cable Service Interface Specifications**:
 	- especifica a arquitetura de rede de dados a cabo e seus protocolos.
 	- utiliza FDM, TDM, pooling e acesso aleatório
-	![[Pasted image 20250502201204.png]]
+	![[images/Pasted image 20250502201204.png]]
 	- FDM: o terminal de distribuição separa grupo de casas por frequência, em cabos coaxiais por exemplo
 	- TDM: as casas mandam uma solicitação para o CMTS pra mandar pacotes, e o CMTS responde mandando os slots de tempo que cada cliente vai poder usar
 	- Pooling: nesse caso o "nó mestre" é o CMTS.
@@ -172,7 +172,7 @@ Duvida: o cliente envolve em dois pacotes? um com endereço do roteador e mais 1
 - Alta velocidade e barata
 
 Estrutura do Quadro Ethernet
-![[Pasted image 20250504150021.png]]
+![[images/Pasted image 20250504150021.png]]
 - Preambulo ajuda na transmissão em diferentes frequencias (dependendo das interfaces de rede da LAN)
 
 
@@ -184,7 +184,7 @@ Estrutura do Quadro Ethernet
 - Repasse: capacidade de determinar as interfaces para as quais um quadro deve ser dirigido
 
 - Filtragem e repasse são feitos com uma **tabela de comutação**.
-		![[Pasted image 20250504150630.png]]
+		![[images/Pasted image 20250504150630.png]]
 - Comutadores são autodidatas (plug&play)
 - Vantagens no uso de comutadores
 	- Eliminação de colisões (cada interface tem um fio proprio ate o comutador)
@@ -196,13 +196,13 @@ Estrutura do Quadro Ethernet
 - Adcionam mais uma camada de segurança
 - "separa as redes locais" -> segurança -> organização
 - Gerencia de usuários ou até setores inteiros
- ![[Pasted image 20250504172303.png]]
+ ![[images/Pasted image 20250504172303.png]]
 
 - Podem ser configuradas em switches, no caso pode-se mapear um conjunto de portas para uma vlan enquanto outro conjunto servirá para outra vlan por exemplo
-![[Pasted image 20250504172436.png]]
+![[images/Pasted image 20250504172436.png]]
 
 O quadro VLAN Ethernet vai diferenciar um pouco do de ethernet comum
-![[Pasted image 20250504172602.png]]
+![[images/Pasted image 20250504172602.png]]
 - identificador de protocolo de rotulo: só indica o switch que é uma vlan
 - controle de informação de rotulo: ID da vlan
 
