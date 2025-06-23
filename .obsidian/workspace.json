@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ea8757c13feedfae",
+        "id": "2865350a82260ae8",
         "type": "tabs",
         "children": [
           {
-            "id": "57090532bb5dfc61",
+            "id": "1109fb053a792fb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cap 7 Redes Multimídia.md",
+                "file": "Cap 8 Segurança em redes de computadores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cap 7 Redes Multimídia"
+              "title": "Cap 8 Segurança em redes de computadores"
             }
           }
         ]
@@ -80,13 +80,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 7 Redes Multimídia.md",
+                "file": "Cap 8 Segurança em redes de computadores.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cap 7 Redes Multimídia"
+              "title": "Outline of Cap 8 Segurança em redes de computadores"
             }
           }
         ]
@@ -169,8 +169,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9912fc61c56f710b",
+  "active": "1109fb053a792fb3",
   "lastOpenFiles": [
+    "Cap 7 Redes Multimídia.md",
+    "Cap 8 Segurança em redes de computadores.md",
+    "Pasted image 20250622221448.png",
+    "Pasted image 20250622194741.png",
     "images/Pasted image 20250622001934.png",
     "images/Pasted image 20250622001528.png",
     "images/Pasted image 20250622001525.png",
@@ -179,9 +183,6 @@
     "images/Pasted image 20250621213857.png",
     "Pasted image 20250622001934.png",
     "Pasted image 20250622001528.png",
-    "Pasted image 20250622001525.png",
-    "Pasted image 20250621232448.png",
-    "Pasted image 20250621220249.png",
     "Cap 5 Camada de Enlace.md",
     "Cap 6 Enlace - Sem fio.md",
     "Redes/Cap 5 Camada de Enlace.md",
