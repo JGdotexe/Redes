@@ -36,7 +36,8 @@ Cenários de uma possível interceptação
 - Ataque com texto aberto conhecido: tenho conhecimento que "Alice e Bob" estão no texto, algumas letras conhecidas facilitarão a quebra do código
 - Ataque com texto aberto escolhido: forçar a entrega de um texto conhecido, assim vc faz uma engenharia reversa a partir do hash gerado
 
-DUVIDA: ainda não entendi oque é cifras de bloco
+**Cifras de Bloco**: 
+	- MINHA NOTA: oque eu entendi foi que, na cifra de bloco, se divide a mensagem e vários blocos de xbits e se criptografa cada um desses blocos
 
 - As cifras de bloco em geral usam uma técnica chamada **Encadeamento de Bloco de Cifra** (CBC - cypher block chaining)
 - enviar somente um valor aleatório junto com a primeira mensagem e, então, fazer o emissor e o receptor usarem blocos codificados em vez do número aleatório subsequente
@@ -53,8 +54,8 @@ DUVIDA: ainda não entendi oque é cifras de bloco
 	- apenas a chave pública pode descriptografar a chave privada
 	- assim como apenas a chave privada pode descriptografar a chave publica
 - dada a chave pública deve ser impossível calcular a chave privada 
-- **RSA**: algorítimo de Rivest Shamir e Adelson
-
+- **RSA**: algorítimo de Rivest Shamir e Adelson - usado para troca de chaves
+- MINHA NOTA: cada participe tem a o  próprio par de chaves público e privado além da cave pública e privada do outro participe para poder decifrar a mensagem que chegar
 #### RSA
 
 O RSA faz uso extensivo das operações aritméticas usando a aritmética de modulo-n
@@ -93,4 +94,22 @@ Exemplos de Funções HASH:
 - MD5
 - SHA-1
 
+MINHA NOTA: 
+- O racioncínio é, Bob coloca a mensagem numa função hash para resumir a mensagem, criptografa o hash usando a chave privada, assim assinando digitalmente
+- A mensagem criptografada junto com a mensagem original em texto aberto é enviada para alice
+- Alice recebe , descriptografa a mensagem, e obtem o hash, então, aplica a função hash na mensagem aberta, e compara, se for igual a mensagem é integra e assinada pelo remetente
+![[Pasted image 20250623102926.png]]
+![[Pasted image 20250623103556.png]]
 DUVIDA: Pedir pare explicar a parte de assinatura digital 
+### Autenticação
+Ideia principal:
+- Usa-se uma chave simétrica que é trocada seguramente pelo mecanismo de chave pública, além de junto mandar um nonce para identificar se a mensagem é ao vivo e não uma reprodução
+
+Alice se comunica com o KDC, pedindo por uma comunicação com BOB
+o KDC manda a chave pra alice e manda uma mensagem codificada com a chave do bob dentro da resposta pra alice(que contem a chave) pro bob
+alice manda a mensagem codificada na chave pro bob para o bob e ele decodiica recebendo a chave 
+
+problema AP5: algém pode ficar no meio pra na hora que perguntar "qual é o sua chave pública", a pessoa do meio pode responder com a própria cave pública
+solução do furo ap5 
+- ter uma entidade certificadora de cave pública
+
