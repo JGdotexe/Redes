@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculo.md",
+                "file": "Cap 7 Redes Multimídia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Calculo"
+              "title": "Cap 7 Redes Multimídia"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,11 +184,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1da7accf7b1ad907",
+  "active": "1109fb053a792fb3",
   "lastOpenFiles": [
-    "Cap 8 Segurança em redes de computadores.md",
-    "Calculo.md",
     "Cap 7 Redes Multimídia.md",
+    "Calculo.md",
+    "Cap 8 Segurança em redes de computadores.md",
     "Pasted image 20250623103556.png",
     "Pasted image 20250623102926.png",
     "Untitled.md",

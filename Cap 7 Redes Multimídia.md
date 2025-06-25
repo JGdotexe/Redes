@@ -164,7 +164,7 @@ percebe-se que teve alguma perda, mas é imperceptível para uma pessoa perceber
 ## RTP Protocolo de tempo real 
 
 - Pode ser usado para transportar formatos comuns como PCM, ACC e MP3 para som e MPEG h.263 para vídeo.
-- Também pode ser sado para transportar formatos proprietários de som e de vídeo
+- Também pode ser usado para transportar formatos proprietários de som e de vídeo
 - Hoje, o RTP é amplamente implementado em muitos produtos e protótipos de pesquisa.
 
 - O RTP especifica uma estrutura de pacote para pacotes que transportam dados de áudio e de vídeo
